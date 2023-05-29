@@ -1,7 +1,7 @@
 import { Avatar } from "@mui/material"
 
 import Image from 'next/image'
-import happy from '../../public/happy.png'
+import happy from '../../public/good4.png'
 
 export default function TrendCard() {
   return (

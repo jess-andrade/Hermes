@@ -13,9 +13,7 @@ export default function Fields() {
 
       {/* For other variants, adjust the size with `width` and `height` */}
       {/* <Skeleton variant="circular" width={100} height={100} /> */}
-      <div className={`flex`}>
-        <Image src={hermes} alt='hermes' className={`w-40`} />
-      </div>
+
       <div className='flex flex-nowrap flex-row justify-around gap-10'>
         <Skeleton variant="rectangular" sx={{ width: '90%', minHeight: '100px', borderRadius: '10px' }} />
       </div>
