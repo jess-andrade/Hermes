@@ -1,4 +1,5 @@
 import Card from "./Card";
+import CardTweet from './CardTweet';
 
 export type TrendInfo = {
   negative_count: number;
@@ -27,6 +28,7 @@ export default function Home({ trends }: HomeProps) {
           description={trend.trend}
         />
       ))}
+      <CardTweet feeling='regular' description='card' />
     </div>
   );
 }

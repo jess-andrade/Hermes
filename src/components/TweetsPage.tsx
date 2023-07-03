@@ -18,8 +18,8 @@ export default function TweetsPage({ tweets }: TweetsPageProps) {
     <div className={`p-10 flex items-center flex-col w-full gap-y-4  `}>
       {tweets.tweet_types.regular
         ? tweets.tweet_types.regular.map((tweet, index) => (
-            <h1 key={index}>{tweet}</h1>
-          ))
+          <h1 key={index}>{tweet}</h1>
+        ))
         : "Sem tweets"}
     </div>
   );
