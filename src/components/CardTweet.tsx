@@ -11,10 +11,10 @@ type CardTypeProps = {
 }
 
 const feelingProps = {
-  'regular': 'border-red-600 bg-gradient-to-r from-orange-400 to-red-600 hover:from-orange-500 hover:to-red-700',
-  'figurative': 'border-green-900 bg-gradient-to-r from-emerald-400 to-green-500 hover:from-lime-500 hover:to-green-600',
-  'sarcasm': 'border-red-600 bg-gradient-to-r from-orange-400 to-red-600 hover:from-orange-500 hover:to-red-700',
-  'irony': 'border-green-900 bg-gradient-to-r from-emerald-400 to-green-500 hover:from-lime-500 hover:to-green-600',
+  'regular': 'border-teal-600 bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-500 hover:to-teal-500',
+  'figurative': 'border-purple-900 bg-gradient-to-r from-violet-400 to-purple-500 hover:from-violet-500 hover:to-purple-600',
+  'sarcasm': 'border-rose-600 bg-gradient-to-r from-pink-400 to-rose-600 hover:from-pink-500 hover:to-rose-700',
+  'irony': 'border-red-600 bg-gradient-to-r from-orange-400 to-red-600 hover:from-orange-500 hover:to-red-700',
 }
 
 export default function ({ feeling, description }: CardTypeProps) {
@@ -32,7 +32,10 @@ export default function ({ feeling, description }: CardTypeProps) {
         {/* name and description */}
         <div className={`flex flex-col flex-wrap`}>
           <div className={`py-2 max-w-2xl flex-wrap text-white text-base text-justify `}>
-            <p>description</p>
+            <p>{description}</p>
+          </div>
+          <div className={`py-2 max-w-2xl flex-wrap text-white text-sm text-justify capitalize `}>
+            <p>» {feeling} «</p>
           </div>
 
         </div>

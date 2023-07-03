@@ -208,9 +208,10 @@ export async function getServerSideProps({ query }: any) {
   //   },
   // };
   return { props: { tweets: listTweets(data.results[0]) } };
+  // return { props: { tweets: listTweets(data) } };
 }
 
-export default function Index({ tweets}: TweetsPageProps) {
+export default function Index({ tweets }: TweetsPageProps) {
   return (
     <>
       <Layout>
