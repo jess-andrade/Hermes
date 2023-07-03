@@ -17,7 +17,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
 import Image from "next/image";
-import hermes from "../../public/hermes.png";
+import hermes from "../../public/Hermeslogo.png";
 
 // imports from Next
 import Link from "next/link";
@@ -67,6 +67,9 @@ export default function MyDrawer(props: Props) {
       <Toolbar />
 
       <List>
+        <div className={`ml-10 mb-10`}>
+          <Image src={hermes} alt='hermes' className={`w-2/3`} />
+        </div>
         <Divider />
 
         <Search />

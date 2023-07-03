@@ -8,8 +8,8 @@ import SearchBar from "./SearchBar";
 export default function Search() {
   return (
     <>
-      <div className={`flex flex-col w-full rounded-xl`}>
-        <div className={` flex-col flex gap-8 w-full justify-center items-center`}>
+      <div className={`pl-14 flex flex-col w-full rounded-xl`}>
+        <div className={` flex-col flex gap-8 w-full justify-start items-start`}>
           <TrendButton />
           <SearchBar />
         </div>
