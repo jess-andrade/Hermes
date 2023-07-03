@@ -224,8 +224,6 @@ export async function getStaticProps() {
 }
 
 export default function Index({ trends }: HomeProps) {
-  console.log(trends);
-
   return (
     <>
       <Layout>
