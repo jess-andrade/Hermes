@@ -1,6 +1,6 @@
-import Home, { HomeProps } from "@/components/Home";
 import Layout from "@/components/Layout";
 import TweetsPage, { TweetsPageProps } from "@/components/TweetsPage";
+import listTweets from "@/utils/listTweets";
 
 export async function getServerSideProps({ query }: any) {
   // Aqui é a requisição de pesquisa já feita, meu amorzinho. //
@@ -207,10 +207,10 @@ export async function getServerSideProps({ query }: any) {
   //     ],
   //   },
   // };
-  return { props: { tweets: data.results[0] } };
+  return { props: { tweets: listTweets(data.results[0]) } };
 }
 
-export default function Index({ tweets }: TweetsPageProps) {
+export default function Index({ tweets}: TweetsPageProps) {
   return (
     <>
       <Layout>
