@@ -3,6 +3,8 @@ import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 
+import TwitterIcon from '@mui/icons-material/Twitter';
+
 const SearchBar = () => (
   <form>
     <TextField
@@ -12,10 +14,12 @@ const SearchBar = () => (
       variant="outlined"
       placeholder="Search..."
       size="medium"
-      sx={{ width: "70%" }}
+      sx={{ width: "70%", bgcolor: '#1d267d' }}
     />
+
     <IconButton type="submit" aria-label="search" size="large">
-      <SearchIcon style={{ fill: "#F00" }} />
+      <SearchIcon style={{ fill: "white" }} />
+      <TwitterIcon color='primary' />
     </IconButton>
   </form>
 );
