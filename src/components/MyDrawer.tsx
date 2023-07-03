@@ -25,7 +25,7 @@ import { useRouter } from 'next/router'
 import Search from './Search';
 
 
-const drawerWidth = 500;
+const drawerWidth = '30%';
 const drawerWidthMobile = '70%';
 
 interface Props {
