@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,4 +20,5 @@
 body {
   color: rgb(var(--foreground-rgb));
   background-color: #1D267D;
+  font-family: 'Nunito', sans-serif;
 }
