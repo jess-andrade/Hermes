@@ -23,8 +23,12 @@ export default function Card({
 
   const handleClick = ({}) => {
     setTweets(tweets);
-    router.push({ pathname: `/trends/${title}` });
+    router.push({ pathname: `/trend/${title}` });
   };
+
+  const handleNextPage = () => {};
+
+  const handlePreviousPage = () => {};
 
   return (
     <div

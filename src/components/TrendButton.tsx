@@ -7,7 +7,7 @@ export default function TrendButton() {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push("/");
+    router.push("/trends");
   };
   return (
     <div

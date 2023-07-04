@@ -16,9 +16,11 @@ export type TrendInfo = {
 
 export type HomeProps = {
   trends: TrendInfo[];
+  nextPage: number | undefined;
+  currentPage: number;
 };
 
-export default function Home({ trends }: HomeProps) {
+export default function Home({ trends, nextPage, currentPage }: HomeProps) {
   return (
     <div className={`p-10 flex items-center flex-col w-full gap-y-4  `}>
       {trends.map((trend, index) => (
@@ -30,6 +32,14 @@ export default function Home({ trends }: HomeProps) {
           tweets={listTweets({ tweet_types: trend.tweet_types })}
         />
       ))}
+      {currentPage == 1 ? false : <h1>Previous Page: {currentPage - 1}</h1>}
+      {nextPage ? (
+        <h1>
+          Next Page: {currentPage + 1} - Link: {nextPage}
+        </h1>
+      ) : (
+        false
+      )}
     </div>
   );
 }
