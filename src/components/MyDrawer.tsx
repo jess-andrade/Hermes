@@ -62,13 +62,24 @@ export default function MyDrawer(props: Props) {
   //   '/c': 'C'
   // }
 
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/");
+  };
+
   const drawer = (
     <div className={`flex flex-col space-y-1 gap-y-10 `}>
       <Toolbar />
 
       <List>
         <div className={`ml-10 mb-10`}>
-          <Image src={hermes} alt='hermes' className={`w-2/3`} />
+          <Image
+            onClick={handleClick}
+            src={hermes}
+            alt="hermes"
+            className={`w-2/3 cursor-pointer`}
+          />
         </div>
         <Divider />
 

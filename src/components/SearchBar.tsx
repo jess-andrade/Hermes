@@ -31,7 +31,8 @@ const SearchBar = () => {
         aria-label="search"
         onClick={(e) => {
           e.preventDefault();
-          console.log(e.target.value);
+          console.log(searchQuery);
+          router.push({ pathname: "/search", query: { query: searchQuery } });
         }}
         size="large"
       >

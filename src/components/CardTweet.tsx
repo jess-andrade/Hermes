@@ -17,7 +17,7 @@ const feelingProps = {
   'irony': 'border-red-600 bg-gradient-to-r from-orange-400 to-red-600 hover:from-orange-500 hover:to-red-700',
 }
 
-export default function ({ feeling, description }: CardTypeProps) {
+export default function CardTweet({ feeling, description }: CardTypeProps) {
   return (
     <div
       className={`p-4 flex items-center flex-nowrap space-x-8 min-w-full min-h-[4vh] rounded-xl border-b-4 border-r-2 ${feelingProps[feeling]}`}>
