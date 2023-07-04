@@ -9,7 +9,7 @@ type RawTweets = {
 
 type Tweet = {
   text: string;
-  feeling: string;
+  feeling: "figurative" | "regular" | "sarcasm" | "irony";
 };
 
 function shuffle(array: Tweet[]) {
@@ -34,7 +34,10 @@ function shuffle(array: Tweet[]) {
 const listTweets = (rawTweets: RawTweets) => {
   let tweets: Tweet[] = [];
 
-  const pushTweets = (tweetTexts: string[], feeling: string) => {
+  const pushTweets = (
+    tweetTexts: string[],
+    feeling: "figurative" | "regular" | "sarcasm" | "irony"
+  ) => {
     for (let text of tweetTexts) {
       tweets.push({ text, feeling });
     }

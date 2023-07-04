@@ -1,5 +1,6 @@
 import Home, { HomeProps } from "@/components/Home";
 import Layout from "@/components/Layout";
+import { useTrendContext } from "@/context/trendContext";
 
 export async function getStaticProps() {
   //   // Fetch data from external API

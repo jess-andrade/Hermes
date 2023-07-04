@@ -1,5 +1,6 @@
+import listTweets from "@/utils/listTweets";
 import Card from "./Card";
-import CardTweet from './CardTweet';
+import CardTweet from "./CardTweet";
 
 export type TrendInfo = {
   negative_count: number;
@@ -26,9 +27,9 @@ export default function Home({ trends }: HomeProps) {
           feeling={trend.negative_count > trend.positive_count ? "bad" : "good"}
           title={trend.trend}
           description={trend.trend}
+          tweets={listTweets({ tweet_types: trend.tweet_types })}
         />
       ))}
-      <CardTweet feeling='regular' description='card' />
     </div>
   );
 }
