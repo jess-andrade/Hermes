@@ -1,4 +1,4 @@
-import HomeIcon from '@mui/icons-material/Home';
+import HomeIcon from "@mui/icons-material/Home";
 
 import { useRouter } from "next/router";
 
@@ -6,7 +6,7 @@ export default function AboutButton() {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push("/about");
+    router.push("/");
   };
   return (
     <div
