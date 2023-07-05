@@ -190,6 +190,7 @@ export default function MyDrawer(props: Props) {
         sx={{
           flexGrow: 1,
           p: 3,
+          backgroundColor: '#1d267d',
           width: { sm: `calc(100% - ${drawerWidth}px)` },
         }}
       >
