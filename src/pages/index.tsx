@@ -4,7 +4,9 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <div className={`pt-6 text-4xl font-bold bg-[#1d267d] text-white`}>Project Hermes</div>
+        <div className={`pt-6 text-4xl font-bold bg-[#1d267d] text-white`}>
+          Project Hermes
+        </div>
         <div className={`p-14`}>
           <div className={``}>
             <p>

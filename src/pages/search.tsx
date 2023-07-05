@@ -1,6 +1,8 @@
 import Layout from "@/components/Layout";
 import TweetsPage, { TweetsPageProps } from "@/components/TweetsPage";
 import listTweets from "@/utils/listTweets";
+const dotenv = require("dotenv");
+dotenv.config();
 
 export async function getServerSideProps({ query }: any) {
   // Aqui é a requisição de pesquisa já feita, meu amorzinho. //
@@ -10,7 +12,7 @@ export async function getServerSideProps({ query }: any) {
     method: "POST",
     body: JSON.stringify({ keyword: query.query }),
     headers: new Headers({
-      "X-API-Key": "Q%o4V#h6Rt@1m5Z&9aG",
+      "X-API-Key": `${process.env.API_KEY}`,
       "Content-Type": "application/json",
     }),
   });
