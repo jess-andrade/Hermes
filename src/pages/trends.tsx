@@ -1,9 +1,11 @@
 import Home, { HomeProps } from "@/components/Home";
 import Layout from "@/components/Layout";
+const dotenv = require("dotenv");
+dotenv.config();
 
 export async function getServerSideProps() {
   const res = await fetch(`http://hermesproject.pythonanywhere.com/trends`, {
-    headers: new Headers({ "X-API-Key": "Q%o4V#h6Rt@1m5Z&9aG" }),
+    headers: new Headers({ "X-API-Key": `${process.env.API_KEY}` }),
   });
   const data = await res.json();
 
