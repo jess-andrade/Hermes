@@ -8,10 +8,8 @@ export default function Search() {
       <div className={`pl-14 flex flex-col w-full rounded-xl`}>
         <div className={` flex-col flex gap-8 w-full justify-start items-start`}>
           <SearchBar />
-          <TrendButton />
           <AboutButton />
-
-
+          <TrendButton />
         </div>
       </div>
     </>

@@ -1,4 +1,4 @@
-import InfoIcon from '@mui/icons-material/Info';
+import HomeIcon from '@mui/icons-material/Home';
 
 import { useRouter } from "next/router";
 
@@ -18,9 +18,9 @@ export default function AboutButton() {
         <div
           className={`flex flex-row gap-8 flex-wrap justify-center items-center`}
         >
-          <InfoIcon color="primary" />
+          <HomeIcon color="primary" />
           <h1 className={`text-x0.5 font-bold uppercase text-white`}>
-            About this App
+            Home Page
           </h1>
         </div>
       </div>
