@@ -65,7 +65,7 @@ export default function MyDrawer(props: Props) {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push("/");
+    router.push("/trends");
   };
 
   const drawer = (
