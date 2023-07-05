@@ -19,13 +19,18 @@ export default function Home() {
               The algorithm no longer uses web scraping to collect tweets.
               Initially, web scraping was used, but due to conflicts with API
               hosting, a database with 1,600,000 tweets was used instead. The
-              link to the database is:
-              [https://www.kaggle.com/datasets/kazanova/sentiment140?resource=download](https://www.kaggle.com/datasets/kazanova/sentiment140?resource=download).
-              However, the other datasets used to train the algorithm were
+              link to the database is:{" "}
+              <a href="https://www.kaggle.com/datasets/kazanova/sentiment140?resource=download">
+                https://www.kaggle.com/datasets/kazanova/sentiment140?resource=download
+              </a>
+              . However, the other datasets used to train the algorithm were
               obtained from sources that were not properly credited. We
               apologize for this lack of credits, but the datasets will be
-              available in the GitHub link:
-              [https://github.com/Mentorzx/Hermes](https://github.com/Mentorzx/Hermes).
+              available in the GitHub link:{" "}
+              <a href="https://github.com/Mentorzx/Hermes">
+                https://github.com/Mentorzx/Hermes
+              </a>
+              .
             </p>
             <br />
             <p>
@@ -73,9 +78,14 @@ export default function Home() {
               - <b>Sentiment classification</b>: The algorithm uses Support
               Vector Machine (SVM) to classify whether the searched keywords
               have a negative or positive sentiment according to the found
-              tweets.\n\n- **Keyword insertion**: It is possible to search for
-              your own keyword, analyze its sentiment, and retrieve the tweets
-              with their respective figures of speech.
+              tweets.\n\n
+            </p>
+            <br />
+
+            <p>
+              - <b>Keyword insertion</b>: It is possible to search for your own
+              keyword, analyze its sentiment, and retrieve the tweets with their
+              respective figures of speech.
             </p>
             <br />
             <p>
@@ -176,12 +186,17 @@ export default function Home() {
               Project Hermes was developed exclusively for academic purposes and
               to enhance the resume of the developer Alex Lira. Web scraping
               initially used to collect tweets was replaced by a database of
-              1,600,000 tweets. The link to the database is:
-              [https://www.kaggle.com/datasets/kazanova/sentiment140?resource=download](https://www.kaggle.com/datasets/kazanova/sentiment140?resource=download).
-              The other datasets used in training the algorithm were obtained
+              1,600,000 tweets. The link to the database is:{" "}
+              <a href="https://www.kaggle.com/datasets/kazanova/sentiment140?resource=download">
+                https://www.kaggle.com/datasets/kazanova/sentiment140?resource=download
+              </a>
+              . The other datasets used in training the algorithm were obtained
               from sources and here is not properly credited. The datasets will
-              be available in the GitHub link:
-              [https://github.com/Mentorzx/Hermes](https://github.com/Mentorzx/Hermes).
+              be available in the GitHub link:{" "}
+              <a href="https://github.com/Mentorzx/Hermes">
+                https://github.com/Mentorzx/Hermes
+              </a>
+              .
             </p>
             <br />
 
