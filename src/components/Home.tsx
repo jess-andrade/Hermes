@@ -1,5 +1,7 @@
 import listTweets from "@/utils/listTweets";
 import Card from "./Card";
+import { Alert } from '@mui/material';
+
 import CardTweet from "./CardTweet";
 
 export type TrendInfo = {
@@ -21,6 +23,7 @@ export type HomeProps = {
 export default function Home({ trends }: HomeProps) {
   return (
     <div className={`p-10 flex items-center flex-col w-full gap-y-4  `}>
+      <Alert severity="warning">The twitter API is temporarily unavailable so we are using static Trends! - Sorry and please wait for new updates</Alert>
       {trends.map((trend, index) => (
         <Card
           key={index}
